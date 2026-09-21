@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bússola — Desafio SPA (ADS)</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Bússola</h1>
+    <span class="today" id="todayLabel">—</span>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Navegação principal">
+    <a class="tab" href="#/inicio" data-rota="/inicio" role="tab">Início</a>
+    <a class="tab" href="#/rotina" data-rota="/rotina" role="tab">Rotina</a>
+    <a class="tab" href="#/energia" data-rota="/energia" role="tab">Energia</a>
+  </nav>
+
+  <!-- container alvo do roteador: todo o conteúdo das "telas" é injetado aqui -->
+  <main id="app" class="shell"></main>
+
+  <footer class="disclaimer">
+    Desafio prático — SPA em JavaScript puro, com roteamento por hash,
+    templates dinâmicos, validação de formulário e persistência em localStorage.
+  </footer>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
